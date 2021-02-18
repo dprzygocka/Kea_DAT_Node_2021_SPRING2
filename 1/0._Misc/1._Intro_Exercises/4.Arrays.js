@@ -35,7 +35,7 @@ const diet = ["tomato", "cucumber", "rocket"];
 
 // You are a programmer. In one line (one statement) insert hamburger, soda and pizza between the elements cucumber and rocket
 
-diet.splice(1,0,"soda","pizza");
+diet.splice(2,0,"hamburger","soda","pizza");
 console.log(diet);
 
 
@@ -64,7 +64,7 @@ const lettersExpanded = ["a","b","c", "d", "e", "f", "g", "h"];
 
 // log every second char in the array starting from b
 
-lettersExpanded.filter((number,index) => { return  index%2 != 0 ? number : ""}).forEach(number => console.log(number));
+lettersExpanded.filter((number,index) => {return  index % 2 != 0 ? number : ""}).forEach(number => console.log(number));
 // --------------------------------------
 // Exercise 8 - For loop and if statement
 
