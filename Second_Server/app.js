@@ -19,7 +19,8 @@ app.get('/day', (req, res) => {
     const date = new Date();
     res.send({
         'day of the week' : dayOfWeek[date.getDay() -1],
-        'day of the month' : date.getDate(),
+        'day of the month' : date.getDate(), //it's american way so sunday is first and it starts from 0 
+        //toLocaleDateString('dk-DK', {​​weekday: "long"}​​) function to extract a day and convert it to name of the week day
     })
 });
 
@@ -30,4 +31,10 @@ app.get('/month', (req, res) => {
     })
 });
 
+
+app.get('/about', (req, res) => {
+    res.send({
+     'version' : '14.15.4'
+    })
+})
 app.listen(8080);
