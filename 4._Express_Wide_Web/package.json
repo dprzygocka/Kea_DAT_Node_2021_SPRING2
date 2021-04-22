@@ -1,5 +1,14 @@
 {
+  "scripts": {
+    "start-dev": "cross-env PORT=3000 nodemon.cmd app.js",
+    "call": "node treasure.js && cd treasure"
+  },
   "dependencies": {
-    "express": "^4.17.1"
+    "encoding": "^0.1.13",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }
